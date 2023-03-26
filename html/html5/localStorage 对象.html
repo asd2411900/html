@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="result"></div>
+    <script>
+        if (typeof(Storage) !== "undefined") {
+            localStorage.setItem("sitename", "菜鸟教程");
+            document.getElementById("result").innerHTML = "网站名" + localStorage.getItem("sitename");
+        } else {
+            document.getElementById("result").innerHTML = "对不起，您的浏览器不支持 web 存储"
+        }
+    </script>
+</body>
+
+</html>
