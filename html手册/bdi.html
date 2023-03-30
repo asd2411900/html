@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- <bdi> 标签允许您设置一段文本，使其脱离其父元素的文本方向设置 -->
+    <ul>
+        <li>用户 <bdi>hrefs</bdi>: 60 分</li>
+        <li>用户 <bdi>jdoe</bdi>: 80 分</li>
+        <li>用户 <bdi>إيان</bdi>: 90 分</li>
+    </ul>
+    <!-- <p><b>注意：</b> 目前只有 Firefox 和 Chrome 浏览器支持 bdi 标签。</p> -->
+
+    <!-- bdo -->
+    <p>该段落文字从左到右显示。 </p>
+    <p><bdo dir="rtl">该段落文字从右到左<bdi>显示</bdi>。</bdo></p>
+    <p><bdo dir="ltr">该段落文字从右到左<bdi >显示</bdi>。
+</body>
+
+</html>

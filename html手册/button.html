@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button type="button" autofocus>点我！</button>
+    <br>
+    <button type="button" disabled>123</button>
+    <br>
+    <form action="demo-form.php" id="nameform" method="get">
+        First name: <input type="text" name="fname"><br> Last name: <input type="text" name="fname"><br>
+    </form>
+    <!-- 下面的按钮是在表单元素外,但仍是表单的一部分。 -->
+    <button type="submit" form="nameform" value="提交">提交</button>
+
+    <br>
+    <form action="demo-form.php" method="get">
+        First name: <input type="text" name="fname" />
+        <br> Last name: <input type="text" name="fname" /><br>
+        <button type="submit">提交</button><br>
+        <button type="submit" formaction="demo-admin.php"></button>
+    </form>
+
+    <br>
+    <!-- ?? -->
+    <form action="demo_post_enctype.php" method="post">
+        Name: <input type="text" name="fname" value="Ståle Refsnes"><br>
+        <button type="submit">使用编码提交</button>
+        <button type="submit" formenctype="text/plain">不使用编码提交</button>
+    </form>
+    <br>
+    <!-- ??  -->
+    <form action="demo-form.php" method="get">
+        E-mail: <input type="email" name="userid"><br>
+        <button type="submit">提交</button><br>
+        <button type="submit" formnovalidate>不验证提交</button>
+    </form>
+    <br>
+    <form action="demo-form.php" method="get">
+        First name: <input type="text" name="fname" />
+        <br> Last name: <input type="text" name="fname" /><br>
+        <button type="submit" formtarget="_blank">提交</button><br>
+        <button type="submit" formaction="demo-form.php" formmethod="post">使用 POST 提交</button>
+    </form>
+
+    <br>
+</body>
+
+</html>
