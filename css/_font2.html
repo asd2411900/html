@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  body{
+    font-size: 100%;
+  }
+  h1 {
+    font-size: 2.5em;
+  }
+  h2 {
+    font-size:3em;
+  }
+
+  /* weight */
+  p.normal {
+    font-weight: normal;
+  }
+  p.light {
+    font-weight: lighter;
+  }
+  p.thick {
+    font-weight: bold;
+  }
+  p.weight {
+    font-weight: 900;
+  }
+
+  /* variant */
+  p.small{
+    font-variant: small-caps;
+  }
+  p.mal {
+    font-variant: normal;
+  }
+
+  /* family ?*/
+  p .serif {
+    font-family: "Times New Roman",Times, serif;
+  }
+  p.sanserif {
+    font-family: Arial,Helvetica,sans-serif;
+  }
+
+  /* <!-- 简写 ?--> 
+  font-style font-variant font-weight font-size/line-height font-family */
+ p.ex1 {
+  font: 15px arial,sans-serif;
+ }
+ p.ex2 {
+  font:italic bold 12px/30px Georgia,serif
+ }
+</style>
+<body>
+  <h1>This is heading 1</h1>
+  <h2>This is heading 2</h2>
+
+<!-- weight -->
+  <p class="normal">This is a paragraph.</p>
+  <p class="light">This is a paragraph.</p>
+  <p class="thick">This is a paragraph.</p>
+  <p class="weight">This is a paragraph.</p>
+
+  <!-- variant -->
+  <p class="normal">My name is Hege Refsnes.</p>
+  <p class="small">My name is Hege Refsnes.</p>
+
+  <!-- 简写 -->
+  <p class="ex1">This is a paragraph. This is a paragraph. This is a paragraph. This is a paragraph. This is a paragraph. This is a paragraph. This is a paragraph. This is a paragraph.</p>
+  <div class="ex2">This is a paragraph. This is a paragraph. This is a paragraph. This is a paragraph. This is a paragraph. This is a paragraph. This is a paragraph. This is a paragraph.</div>
+  <br>
+
+  <!-- family -->
+  <div class="serif">这一段的字体是 Times New Roman </div>
+  <div class="sansserif">这一段的字体是 Arial.</div>
+</body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+  <style>
+  a {
+    text-decoration: none;
+  }
+  h1 {
+    text-decoration: overline;
+  }
+  h2 {
+    text-decoration: underline;
+  }
+  p {
+    text-indent: 50px;
+  }
+  h4 {
+    letter-spacing: 2px;
+  }
+  h5 {
+    letter-spacing: -3px;
+  }
+  p.small {
+    line-height: 70%;
+  }
+  p.big {
+    line-height: 200%;
+  }
+  div.exl {
+    direction: rtl;
+    /* unicode-bidi: bidi-override;??? */
+    unicode-bidi: bidi-override;
+  }
+  p.word {
+    word-spacing: 30px;
+  }
+  p.nowrap {
+    white-space: nowrap;
+  }
+  img.top {
+    vertical-align: text-top;
+  }
+  img.bottom {
+    vertical-align: text-bottom;
+  }
+  /* shadow?? text-shadow: h-shadow v-shadow blur color;*/
+  p.shadow {
+    text-shadow: 10px 2px #ff0000;
+  }
+  </style>
+<body>
+  <p><a href="http://www.runoob.com/">runoob.com</a></p>
+  <h1>This is heading 1</h1>
+  <h2>This is heading 2</h2>
+  <h3>This is heading 3</h3>
+  <p>In my younger and more vulnerable years my father gave me some advice that I've been turning over in my mind ever since. 'Whenever you feel like criticizing anyone,' he told me, 'just remember that all the people in this world haven't had the advantages that you've had.'</p>
+  <h4>This is heading 1</h4>
+  <h5>This is heading 2</h5>
+
+  <p class="samll">
+    这是一个更小行高的段落。<br>
+    这是一个更小行高的段落。<br>
+    这是一个更小行高的段落。<br>
+    这是一个更小行高的段落。<br>
+  </p>
+  <p class="big">
+    这是一个更小行高的段落。<br>
+    这是一个更小行高的段落。<br>
+    这是一个更小行高的段落。<br>
+    这是一个更小行高的段落。<br>
+  </p>
+  <div class="exl">
+    一些文本。从右到左的书写方向。
+  </div>
+  <p class="word">
+    This is some text. This is some text.
+  </p>
+  <p class="nowrap">
+    这是一些文本。这是一些文本。这是一些文本。这是一些文本。这是一些文本。
+这是一些文本。这是一些文本。这是一些文本。这是一些文本。这是一些文本。
+这是一些文本。这是一些文本。这是一些文本。这是一些文本。这是一些文本。
+这是一些文本。这是一些文本。这是一些文本。这是一些文本。这是一些文本。
+这是一些文本。这是一些文本。这是一些文本。这是一些文本。这是一些文本。
+  </p>
+
+  <p>一个 <img src="https://www.runoob.com/try/demo_source/logo.png" alt="a" width="270" height="50"> 默认对齐图像</p>
+  <p>一个 <img class="top" src="https://www.runoob.com/try/demo_source/logo.png" alt="b" width="270" height="50">text-top 默认对齐图像</p>
+  <p>一个 <img class="bottom" src="https://www.runoob.com/try/demo_source/logo.png" alt="c" height="50">text-bottom 默认对齐图像</p>
+
+  <p class="shadow">
+    效果
+  </p>
+</body>
+</html>
