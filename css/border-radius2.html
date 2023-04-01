@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    #rcorners4 {
+      border-radius: 15px 50px 30px 5px;
+      padding: 20px;
+      width: 200px;
+      height: 150px;
+    }
+    #rcorners5 {
+      border-radius: 15px 50px 30px;
+      padding: 20px;
+      width: 200px;
+      height: 150px;
+    }
+    #rcorners6 {
+      border-radius: 15px 50px;
+      padding: 20px;
+      width: 200px;
+      height: 150px;
+    }
+    #rcorners7 {
+      border-radius: 15px;
+      padding: 20px;
+      width: 200px;
+      height: 150px;
+    }
+    .runoob-color {
+      color: #fff !important;
+      background-color: #73AD !important;
+      background-color: #04AA6D !important;
+    }
+  </style>
+</head>
+<body>
+    <p>椭圆边框 - border-radius: 15px 50px 30px 5px：第一个值适用于左上角，第二个值适用于右上角，第三个值适用于右下角，第四个值适用于左下角：</p>
+  <p id="rcorners4" class="runoob-color"></p>
+
+  <p>椭圆边框 - border-radius: 15px 50px 30px：第一个值适用于左上角，第二个值适用于右上角和左下角，第三个值适用于右下角：</p>
+  <p id="rcorners5" class="runoob-color"></p>
+
+  <p>椭圆边框 - border-radius: 15px 50px：第一个值适用于左上角和右下角，第二个值适用于右上角和左下角</p>
+  <p id="rcorners6" class="runoob-color"></p>
+    
+  <p>椭圆边框 - border-radius: 15px：该值适用于所有四个角，均等圆角</p>
+  <p id="rcorners7" class="runoob-color"></p>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    #example1 {
+      border: 2px solid red;
+      padding: 10px;
+      border-radius: 2em / 5em;
+    }
+    #example2 {
+      border: 2px solid red;
+      padding: 10px;
+      border-radius: 2em 1em  /0.5em 3em;
+    }
+  </style>
+</head>
+<body>
+
+<h2>border-radius: 2em / 5em:</h2>
+<div id="example1">
+  <p>等价于: border-top-left-radius: 2em 5em; border-top-right-radius: 2em 5em; border-bottom-right-radius: 2em 5em; border-bottom-left-radius: 2em 5em;</p>
+</div>
+
+<h2>border-radius: 2em 1em 4em / 0.5em 3em:</h2>
+<div id="example2">
+  <p>等价于: border-top-left-radius: 2em 0.5em; border-top-right-radius: 1em 3em; border-bottom-right-radius: 4em 0.5em; border-bottom-left-radius: 1em 3em;</p>
+</div>
+
+</body>
+</html>
