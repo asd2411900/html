@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    #overflowTest {
+      background: #4caf50;
+      color: white;
+      padding: 15px;
+      width: 80%;
+      height: 100px;
+      overflow: scroll;
+      border: 1px solid #ccc;
+    }
+    #overflowTest2 {
+      background-color: #eee;
+      width: 200px;
+      height: 50px;
+      border: 1px dotted black;
+      overflow: visible;
+    }
+  </style>
+</head>
+<body>
+  <div id="overflowTest">
+    <p>这里的文本内容是可以滚动的，滚动条方向是垂直方向。</p>
+    <p>这里的文本内容是可以滚动的，滚动条方向是垂直方向。</p>
+    <p>这里的文本内容是可以滚动的，滚动条方向是垂直方向。</p>
+    <p>这里的文本内容是可以滚动的，滚动条方向是垂直方向。</p>
+    <p>这里的文本内容是可以滚动的，滚动条方向是垂直方向。</p>
+    <p>这里的文本内容是可以滚动的，滚动条方向是垂直方向。</p>
+    </div>
+
+    <div id="overflowTest2">
+      <p>这里的文本内容会溢出元素框。</p>
+      <p>这里的文本内容会溢出元素框。</p>
+      <p>这里的文本内容会溢出元素框。</p>
+      </div>
+</body>
+</html>
