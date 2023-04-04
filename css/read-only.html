@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    input:read-only {
+      background-color: yellow;
+    }
+    input:read-write {
+      background-color: bisque;
+    }
+    input:required {
+      background-color: red;
+    }
+    :root {
+      background: burlywood;
+    }
+  </style>
+</head>
+<body>
+  <p>普通的input元素:<br><input value="hello"></p>
+
+  <p>只读的input元素:<br><input readonly value="hello"></p>
+  
+  <!-- read-write 选择器选取没有设置 "readonly" 属性的元素。 -->
+  <p>普通的input元素:<br><input value="hello"></p>
+  <p>只读的input元素:<br><input readonly value="hello"></p>
+
+
+  <h3>A demonstration of the :required selector.</h3>
+
+  <p>An optional input element:<br><input></p>
+
+  <p>A required input element:<br><input required></p>
+</body>
+</html>

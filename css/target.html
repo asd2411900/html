@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    :target {
+      border: 2px solid #D4D4D4;
+      background-color: #e5eecc;
+    }
+    input:valid {
+      background-color: yellow;
+    }
+  </style>
+</head>
+<body>
+  <h1>This is a heading</h1>
+
+  <p><a href="#news1">Jump to New content 1</a></p>
+  <p><a href="#news2">Jump to New content 2</a></p>
+  
+  <p>Click on the links above and the :target selector highlight the current active HTML anchor.</p>
+  
+  <p id="news1"><b>New content 1...</b></p>
+  <p id="news2"><b>New content 2...</b></p>
+  <!-- 如果 input 元素中输入的值为合法的，设置其为黄色: -->
+  <input type="email" value="support@exampel.com" />
+</body>
+</html>
