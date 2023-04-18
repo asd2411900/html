@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+      p:first-child {
+        color: blue;
+      }
+
+      div>i:first-child {
+        color: blue;
+      }
+
+      h1:first-child i{
+        color: red;
+      }
+
+
+  </style>
+</head>
+<body>
+  <h1>I am a <i>strong</i> man. I am a <i>strong</i> man.</h1>
+
+  <p>This is some text.</p>
+  <p>This is some text.</p>
+
+  <div>I am a <i>strong</i> man. I am a <i>strong</i> man.</div>
+
+
+  <!-- 这是一个CSS选择器，它选中了HTML文档中所有作为第一个段落（p）子元素的斜体（i）元素。具体来说，该选择器使用了“:first-child”伪类，表示选择器只匹配第一个段落子元素中的斜体元素。如果同一段落中有多个子元素，但第一个子元素不是斜体元素，则该选择器不会匹配该段落。 -->
+  <h1>I am a <i>strong</i> man. I am a <i>strong</i> man.</h1>
+  <h1>I am a <i>strong</i> man. I am a <i>strong</i> man.</h1>
+</body>
+</html>
