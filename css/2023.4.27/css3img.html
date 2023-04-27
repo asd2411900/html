@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    div {
+      border: 15px solid transparent;
+      width: 250px;
+      padding: 10px 20px;
+    }
+
+    #round {
+      border-image: url(https://www.runoob.com/images/border.png) 30 30 round;
+    }
+
+    #stretch {
+      border-image: url(https://www.runoob.com/images/border.png) 30 30 stretch;
+    }
+  </style>
+</head>
+<body>
+  
+<div id="round">这里，图像平铺（重复）来填充该区域。</div>
+<br>
+<div id="stretch">这里，图像被拉伸以填充该区域。</div>
+
+<img src="https://www.runoob.com/images/border.png">
+</body>
+</html>
