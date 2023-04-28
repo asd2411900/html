@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    #grad1 {
+      height: 150px;
+      width: 200px;
+      background-color: red;
+      background-image: radial-gradient(red,green,blue);
+    }
+
+    #grad2 {
+      height: 150px;
+      width: 200px;
+      background-color: red; /* 浏览器不支持的时候显示 */
+      background-image: radial-gradient(red 5%, green 15%, blue 60%);
+    }
+
+    #grad3 {
+      height: 150px;
+      width: 200px;
+      background-color: red; /* 浏览器不支持的时候显示 */
+      background-image: radial-gradient(red, yellow, green);
+    }
+
+    #grad4 {
+      height: 150px;
+      width: 200px;
+      background-color: red; /* 浏览器不支持的时候显示 */
+      background-image: radial-gradient(circle,red, yellow, green);
+    }
+  </style>
+</head>
+<body>
+  <div id="grad1"></div>
+  <div id="grad2"></div>
+
+  <p><strong>椭圆形 Ellipse（默认）：</strong></p>
+  <div id="grad3"></div>
+
+  <p><strong>圆形 Circle：</strong></p>
+  <div id="grad4"></div>
+</body>
+</html>

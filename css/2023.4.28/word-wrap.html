@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    p.test {
+      width: 11em;
+      border: 1px solid #000;
+      word-wrap: break-word;
+    }
+
+    p.test1 {
+      width: 9em;
+      border: 1px solid #000;
+      word-break: keep-all;
+    }
+
+    p.test2 {
+      width: 9em;
+      border: 1px solid #000;
+      word-break: keep-all;
+    }
+    /* 指定在文本中遇到空格时才允许换行，否则单词会被保持在同一行。 */
+  </style>
+</head>
+<body>
+
+  <p class="test"> This paragraph contains a very long word: thisisaveryveryveryveryveryverylongword. The long word will break and wrap to the next line.</p>
+
+  <p class="test1"> This paragraph contains some text. This line will-break-at-hyphenates.</p>
+  <p class="test2"> This paragraph contains some text: The lines will break at any character.</p>
+
+  
+  </body>
+</html>
