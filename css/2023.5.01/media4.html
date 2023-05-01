@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    ul {
+      list-style-type: none;
+    }
+
+    ul li a {
+      color: green;
+      text-decoration: none;
+      padding: 3px;
+      display: block;
+    }
+
+    #nav {
+      width: 35%;
+      float: left;
+    }
+
+    @media screen and (max-width:699px) and (min-width:520px),(min-width:1151px) {
+      #nav li a {
+        padding-left: 30px;
+        background: url(qq.png) left center no-repeat;
+      }
+    }
+
+    @media screen and (max-width:1000px) and (min-width:700px) {
+      #nav li a:before {
+        content: "Email";
+        font-style: italic;
+        color: #666;
+      }
+    }
+
+    @media screen and (min-width:1001px) {
+      #nav li a:after {
+        content: "("attr(data-email)")";
+        font-size: 12px;
+        font-style: italic;
+        color: #666;
+    }
+  }
+  </style>
+</head>
+<body>
+  <ul id="nav">
+    <li><a href="mailto:johndoe@example.com" data-email="johndoe@example.com">John Doe</a></li>
+    <li><a href="mailto:marymoe@example.com" data-email="marymoe@example.com">Mary Moe</a></li>
+    <li><a href="mailto:amandapanda@example.com" data-email="amandapanda@example.com">Amanda Panda</a></li>
+  </ul>
+
+  <div id="main">
+    <p>这里是很多的文本！！！这里是很多的文本！！！这里是很多的文本！！！这里是很多的文本！！！这里是很多的文本！！！这里是很多的文本！！！这里是很多的文本！！！这里是很多的文本！！！这里是很多的文本！！！这里是很多的文本！！！这里是很多的文本！！！这里是很多的文本！！！这里是很多的文本！！！这里是很多的文本！！！这里是很多的文本！！！这里是很多的文本！！！这里是很多的文本！！！这里是很多的文本！！！这里是很多的文本！！！这里是很多的文本！！！这里是很多的文本！！！这里是很多的文本！！！这里是很多的文本！！！这里是很多的文本！！！这里是很多的文本！！！这里是很多的文本！！！</p>
+    </div>
+    
+</body>
+</html>
