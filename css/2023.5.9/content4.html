@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    p.one:before {
+      content: "来这里学编程";
+    }
+
+    p.two::before {
+      content: open-quote;
+    }
+
+    p.two::after {
+      content:close-quote ;
+    }
+
+    p#testID::before {
+      content: open-quote;
+    }
+
+    p#testID::after {
+      content: close-quote;
+    }
+
+    p#testID:before {
+      content: no-open-quote;
+    }
+
+    p#testID:after {
+      content: no-close-quote;
+    }
+  </style>
+</head>
+<body>
+  <p class="one">菜鸟教程</p>
+  <p class="two">菜鸟教程</p>
+  <p id="testID">强的很！！！</p>
+</body>
+</html>
