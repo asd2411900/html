@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    h1.under {
+      text-decoration: underline;
+    }
+
+    h1.over {
+      text-decoration: overline;
+    }
+
+    p.line {
+      text-decoration: line-through;
+    }
+
+    p.blink {
+      text-decoration: blink;
+    }
+
+    a.none {
+      text-decoration: none;
+    }
+
+    p.underover {
+      text-decoration: underline overline;
+    }
+  </style>
+</head>
+<body>
+  <h1 class="under">下划线</h1>
+  <p class="line">删除线</p>
+  <p class="blink">闪烁效果，但浏览器不会显示</p>
+  <h1 class="over">上划线</h1>
+  <p>这是一个 <a class="none" href="#">链接</a>，默认情况下链接是有下划线的，这边我们移除它。</p>
+  <p class="underover">上划线与下划线</p>
+</body>
+</html>
