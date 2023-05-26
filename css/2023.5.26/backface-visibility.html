@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    div {
+      position: relative;
+      height: 60px;
+      width: 60px;
+      background-color: red;
+      transform: rotate(180deg);
+      -webkit-transform: rotate(180deg);
+    }
+
+    #div1 {
+      -webkit-backface-visibility: hidden;
+    }
+
+    #div2 {
+      -webkit-backface-visibility: hidden;
+    }
+  </style>
+</head>
+<body>
+  
+<div id="div1">DIV 1</div>
+
+<div id="div2">DIV 2</div>
+</body>
+</html>
