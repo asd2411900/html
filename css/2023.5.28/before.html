@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    /* p:before {
+      content: "Read this _";
+    } */
+
+    p::before {
+      content: "Read this__";
+      background-color: yellow;
+      color: red;
+      font-weight: bold;
+    }
+
+    p::after {
+      content: "-注意我";
+    }
+  </style>
+</head>
+<body>
+  <p>My name is Donald</p>
+<p>I live in Ducksburg</p>
+
+<p><b>注意:</b>  :before 作用于 IE8,DOCTYPE 必须已经声明.</p>
+
+</body>
+</html>
