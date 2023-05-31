@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    #myDIV {
+      width: 50%;
+      background-color: lightblue;
+      overflow: auto;
+      border: 1px solid black;
+      animation: mymove 5s infinite;
+    }
+
+    @-webkit-keyframes mymove {
+    50% {min-width: 800px;}
+}
+
+    @keyframes my {
+      50% {min-width: 800px;}
+    }
+  </style>
+</head>
+<body>
+  <div id="myDIV">
+    <p>This DIV element has a pre-defined width: 50%.</p>
+    <p>An animation will gradually change the min-width to 800 pixels.</p>
+  </div>
+  
+</body>
+</html>

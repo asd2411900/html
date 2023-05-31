@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    #main {
+      width: 400px;
+      height: 150px;
+      border: 1px solid #000;
+      display: flex;
+    }
+
+    #main div {
+      width: 70px;
+      height: 70px;
+    }
+
+    #myGreenDIV {
+      animation: my 5s infinite;
+    }
+
+    @keyframes my {
+      50% {
+        order: 6;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div id="main">
+    <div style="background-color:lightgreen;order:1;" id="myGreenDIV"></div>
+    <div style="background-color:coral;order:2;"></div>
+    <div style="background-color:lightblue;order:3;"></div>
+    <div style="background-color:pink;order:4;"></div>
+  </div>
+  
+</body>
+</html>

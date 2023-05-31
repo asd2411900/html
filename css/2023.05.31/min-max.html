@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    #container {
+      display: grid;
+      grid-template-columns: minmax(max-content, 300px) minmax(200px, 1fr) 150px;
+      grid-gap: 5px;
+      box-sizing: border-box;
+      height: 200px;
+      width: 100%;
+      background-color: #8cffa0;
+      padding: 10px;
+    }
+
+    #container > div {
+      background-color: #8ca0ff;
+      padding: 5px;
+    }
+  </style>
+</head>
+<body>
+  <div id="container">
+    <div>
+      DIV 宽度自适应内容宽度，<br/>
+      但最大宽度为 300 像素
+    </div>
+    <div>
+      DIV 宽度自适应内容宽度，<br/>
+    但至少为 200 像素
+    </div>
+    <div>
+      DIV 宽度固定为 150 像素
+    </div>
+  </div>
+</body>
+</html>
