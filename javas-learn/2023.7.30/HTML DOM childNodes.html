@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <p id="demo">单击“按钮”获取有关身体元素的子节点的信息</p>
+<button onclick="myFunction()">点我</button>
+
+
+<script>
+  function myFunction() {
+    let txt = "";
+    let c = document.body.childNodes;
+    for(i = 0; i < c.length;i++) {
+      txt = txt + c[i].nodeName + "<br>";
+    }
+    let x = document.getElementById("demo");
+    x.innerHTML=txt;
+  }
+</script>
+</body>
+</html>
